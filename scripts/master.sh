@@ -4,7 +4,7 @@
 
 set -euxo pipefail
 
-MASTER_IP="10.0.0.10"
+MASTER_IP=$(curl ifconfig.me)
 NODENAME=$(hostname -s)
 POD_CIDR="192.168.0.0/16"
 
